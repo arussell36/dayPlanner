@@ -1,0 +1,111 @@
+/* -----------------------------------ATOMIC CSS------------------------------------------- */
+
+.borderBottom {
+    border-bottom-style: solid;
+
+}
+
+.color1 {
+    background-color: #dff4f3;
+}
+
+.color2 {
+    background-color: #dde7f2;
+}
+
+.color3 {
+    background-color: #b9bbdf;
+}
+
+.color4 {
+    background-color: #878ecd;
+}
+
+.color4 {
+    background-color: #ABACAB;
+}
+
+
+
+
+.globalCSS {
+    /* background-color: gray; */
+
+}
+
+
+
+
+/* -------------------------------- CLASS BASED CSS------------------------------------------ */
+
+.headerContainer {
+    text-align: center;
+    padding: 4vw 0vw 3vw 0vw;
+    border-bottom-style: solid;
+    border-bottom-width: .25vw;
+    background-color: #878ecd;
+
+}
+
+.headerTitle {
+    text-align: center;
+    font-size: 6.5vh;
+    
+
+}
+
+.headerDetails {
+    text-align: center;
+    font-size: 2.25vh;
+
+}
+
+
+
+.bodyContainer {
+    padding: 2vw 20vw 2vw 20vw;
+    background-color: #dff4f3;
+
+}
+
+.rowHour {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 4.5vw;
+    border-top-style: solid;
+    /* background-color: */
+
+}
+
+.columnTime {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+    width: 11vw;
+    padding-right: 1vw;
+    font-size: 2.5vh;
+    /* background-color: */
+
+
+
+}
+
+.columnEvent {
+    width: 76vw;
+    border-left-style: solid;
+    border-right-style: solid;
+ 
+
+
+}
+
+.columnSave {
+    width: 12vw;
+    border-right-style: solid;
+    background-color: #878ecd;
+
+
+}
+
