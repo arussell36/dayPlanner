@@ -93,7 +93,7 @@
 }
 
 .columnEvent {
-    width: 76vw;
+    width: 83vw;
     border-left-style: solid;
     border-right-style: solid;
  
@@ -102,10 +102,17 @@
 }
 
 .columnSave {
-    width: 12vw;
+    width: 5vw;
     border-right-style: solid;
+    text-align: center;
     background-color: #878ecd;
 
+
+}
+
+.saveIcon {
+    /* float: left; */
+    height: 100%;
 
 }
 
