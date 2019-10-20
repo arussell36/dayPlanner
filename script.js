@@ -4,11 +4,23 @@
 // VARIABLES
     // event to grab todays date
 
+var time = moment().format('LLL');
 
 // HELPER FUNCTIONS
 function youSuck () {
     alert("you suck");
 };
+
+var timeDiv = $(`<div>${time}</div>`);
+$(".headerDetails").append(timeDiv)
+
+// var hour = moment().format('HH');
+// console.log(hour);
+
+var hour = moment().format('HH');
+console.log(hour);
+    
+
 
 
 
@@ -20,6 +32,7 @@ $("#saveClick9").on("click", function(){
     // youSuck();
     var event = $("#eventText9").val();
     localStorage.setItem("eventNine", event);
+    
 
 })
 
@@ -79,6 +92,12 @@ $("#saveClick5").on("click", function(){
 
 })
 
+$("#clear").on("click", function(){
+    // youSuck();
+    localStorage.clear();
+
+})
+
 // INIT
     // 1. check local storage object for matching ID
     // 2. color code past present and future rows
@@ -94,21 +113,85 @@ function init() {
     $("#eventText4").val(localStorage.getItem("eventFour"))
     $("#eventText5").val(localStorage.getItem("eventFive"))
 
-
-
 };
 
+function timeCheck() {
+    if (hour > 9) {
+        $("#hourNineAM").attr("class", "rowHour color4");
+            } else if (hour === 9) {
+                $("#hourNineAM").attr("class", "rowHour color5");}
+                    else {$("#hourNineAM").attr("class", "rowHour color1");}
+    
+    if (hour > 10) {
+        $("#hourTenAM").attr("class", "rowHour color4");
+            } else if (hour === 9) {
+                $("#hourTenAM").attr("class", "rowHour color5");}
+                    else {$("#hourTenAM").attr("class", "rowHour color1");}
+
+    if (hour > 11) {
+        $("#hourElevenAM").attr("class", "rowHour color4");
+            } else if (hour === 9) {
+                $("#hourElevenAM").attr("class", "rowHour color5");}
+                    else {$("#hourElevenAM").attr("class", "rowHour color1");}
+    if (hour > 12) {
+        $("#hourTwelvePM").attr("class", "rowHour color4");
+            } else if (hour === 9) {
+                $("#hourTwelvePM").attr("class", "rowHour color5");}
+                    else {$("#hourTwelvePM").attr("class", "rowHour color1");}
+
+    if (hour > 13) {
+        $("#hourOnePM").attr("class", "rowHour color4");
+            } else if (hour === 9) {
+                $("#hourOnePM").attr("class", "rowHour color5");}
+                    else {$("#hourOnePM").attr("class", "rowHour color1");}
+    if (hour > 14) {
+        $("#hourTwoPM").attr("class", "rowHour color4");
+            } else if (hour === 9) {
+                $("#hourTwoPM").attr("class", "rowHour color5");}
+                    else {$("#hourTwoPM").attr("class", "rowHour color1");}
+
+    if (hour > 15) {
+        $("#hourThreePM").attr("class", "rowHour color4");
+            } else if (hour === 9) {
+                $("#hourThreePM").attr("class", "rowHour color5");}
+                    else {$("#hourThreePM").attr("class", "rowHour color1");}
+    if (hour > 16) {
+        $("#hourFourPM").attr("class", "rowHour color4");
+            } else if (hour === 9) {
+                $("#hourFourPM").attr("class", "rowHour color5");}
+                    else {$("#hourFourPM").attr("class", "rowHour color1");}
+    if (hour > 17) {
+        $("#hourFivePM").attr("class", "rowHour color4");
+            } else if (hour === 9) {
+                $("#hourFivePM").attr("class", "rowHour color5");}
+                    else {$("#hourFivePM").attr("class", "rowHour color1");}
 
 
+}
 
+
+var checking = $("#hourNineAM").val();
+console.log(checking);
 
 
 
 
 init();
+timeCheck(); 
 
 
 
 
+// NEW WAY TO DO IT!!
+
+// var day = {};
 
 
+// var key = $(this).data("key");
+// var value = $(`#${key}`).val();
+
+// day[key] = value;
+
+// localStorage.setItem("myDay", JSON.stringify(day));
+
+// 1. data-key in the button to target the textarea make sure the datakey is equal to the id of the text area

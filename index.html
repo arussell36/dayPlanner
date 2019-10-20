@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./normalize.css">
     <link rel="stylesheet" href="./style.css">
 
+
 </head>
 <body class="globalCSS">
     <!-- header -->
@@ -16,14 +17,14 @@
             Workday Planner
         </div>
         <div class="headerDetails" id="headerDate">
-            test test test test date date date date
+            
             <!-- FILLER FOR DATE -->
         </div>
     </header>
 
     <!-- content -->
     <section class="bodyContainer">
-        <div class="rowHour" id="hourNineAM">
+        <div class="rowHour" id="hourNineAM" value="9">
             <div class="columnTime">
                 9 AM
             </div>
@@ -113,12 +114,18 @@
             </div>
             
         </div>
+
+        <div class="clearButton">
+            <button id="clear">Clear Events</button>
+        </div>
         <!-- table -->
         <!-- 3 columns for data -->
             <!-- 9 rows for data -->
             <!-- rows contain string -> input box -> then a button -->
     </section>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript" src="./script.js"></script>
 </body>
 </html>
