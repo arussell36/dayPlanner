@@ -11,9 +11,6 @@ function youSuck () {
     alert("you suck");
 };
 
-var timeDiv = $(`<div>${time}</div>`);
-$(".headerDetails").append(timeDiv)
-
 // var hour = moment().format('HH');
 // console.log(hour);
 
@@ -102,6 +99,22 @@ $("#clear").on("click", function(){
     // 1. check local storage object for matching ID
     // 2. color code past present and future rows
 
+    // function startTimer() {
+    //     totalTime = 0;
+    //     var setTime = 60;
+    //     var timeSpent = 0;
+    //     var timerDiv = $("<div>").attr("id", "time");
+    //     $("#timerSpot").append(timerDiv);
+    //     timerVar = setInterval(function () {      
+    //         timeSpent = timeSpent + 1;
+    //         totalTime = setTime - timeSpent;
+    //         // console.log(totalTime);  
+    //         $("#time").text(totalTime + " time left");      
+    //         }, 1000);
+        
+    //     };
+
+
 function init() {
     $("#eventText9").val(localStorage.getItem("eventNine"))
     $("#eventText10").val(localStorage.getItem("eventTen"))
@@ -167,11 +180,15 @@ function timeCheck() {
                     else {$("#hourFivePM").attr("class", "rowHour color1");}
 
 
+    var timeDiv = $(`<div>${time}</div>`);
+    $(".headerDetails").append(timeDiv)
+
 }
 
 
 var checking = $("#hourNineAM").val();
 console.log(checking);
+
 
 
 

@@ -1,0 +1,19 @@
+Function
+Calendar to check input events. Input events that are saved are stored in local storage to be refernced in the future. clicking
+clear events will clear the local storage to allow for new events to be entered. Time frames that are gray are in the past. Time 
+frames very light blue are in the future and the box highlighted green is the current hour. 
+
+Instruction:
+1. to input events click in the text area between the timeframe and the same button
+2. when event info is input hitting the save button will save the text data to local storage
+3. to clear events from the boxes on refresh hit clear events.
+
+Improvement Patches
+- clear events button will clear the text boxes area
+- current hour row will have a small amount of padding to make it more apparent
+- the save button will not be in a wrapper div
+	- the start state for save button will be separated and an unlocked icon when clicked it becomes locked icon and joins the 
+	div so there is no padding separation. this will make it easier to see which events have been saved
+	- start state will check local storage and if there is data start state save buttons will begin as locked
+- styling on the boxes
+- set interval to actively update page on the regular
